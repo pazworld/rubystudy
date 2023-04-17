@@ -1,0 +1,2 @@
+# rubystudy
+to study ruby
