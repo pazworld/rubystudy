@@ -3,4 +3,5 @@
     "dockerComposeFile": "../docker/docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace"
+    "remoteUser": "rails"
 }
