@@ -2,6 +2,7 @@
     "name": "RailsTutorial",
     "dockerComposeFile": "../docker/docker-compose.yml",
     "service": "app",
+    "forwardPorts": [3000],
     "workspaceFolder": "/workspace"
     "remoteUser": "rails"
 }
