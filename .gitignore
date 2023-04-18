@@ -71,3 +71,4 @@ yarn-debug.log*
 .local/
 .vscode-server/
 .ash_history
+.irb_history
