@@ -2,6 +2,11 @@
 
 <%= render @user %>
 
+<p>
+<strong>First Micropost:</strong>
+<%= @user.microposts.first.content %>
+</p>
+
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
   <%= link_to "Back to users", users_path %>
