@@ -65,3 +65,9 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+# Misc
+.bundle/
+.local/
+.vscode-server/
+.ash_history
