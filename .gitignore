@@ -72,3 +72,4 @@ yarn-debug.log*
 .vscode-server/
 .ash_history
 .irb_history
+.guard_history
