@@ -1,6 +1,6 @@
 FROM ruby:3-alpine
 
-RUN apk --update add bash git build-base sqlite-dev tzdata && \
+RUN apk --update add bash git build-base sqlite sqlite-dev tzdata && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
     echo "Asia/Tokyo" > /etc/timezone
 RUN mkdir -p /workspace/container-home && addgroup -g 1000 rails && \
