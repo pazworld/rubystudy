@@ -73,3 +73,5 @@ yarn-debug.log*
 .ash_history
 .irb_history
 .guard_history
+.rdbg_history
+
