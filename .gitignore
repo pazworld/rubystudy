@@ -75,4 +75,4 @@ yarn-debug.log*
 .guard_history
 .rdbg_history
 .bash_history
-
+.dotnet
