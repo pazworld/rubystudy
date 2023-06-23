@@ -28,34 +28,24 @@ class UsersProfileRelationTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
     log_in_as @user
-    @archer = users(:archer)
-    @lana = users(:lana)
   end
 
   test "following count in home page" do
-    @user.follow(@archer)
-    @user.follow(@lana)
     get root_path
     assert_select 'strong#following', text: @user.following.count.to_s
   end
 
   test "followers count in home page" do
-    @archer.follow(@user)
-    @lana.follow(@user)
     get root_path
     assert_select 'strong#followers', text: @user.followers.count.to_s
   end
 
   test "following count in profile page" do
-    @user.follow(@archer)
-    @user.follow(@lana)
     get user_path(@user)
     assert_select 'strong#following', text: @user.following.count.to_s
   end
 
   test "followers count in profile page" do
-    @archer.follow(@user)
-    @lana.follow(@user)
     get user_path(@user)
     assert_select 'strong#followers', text: @user.followers.count.to_s
   end
