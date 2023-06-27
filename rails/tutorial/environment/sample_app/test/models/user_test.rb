@@ -106,6 +106,7 @@ class UserTest < ActiveSupport::TestCase
         assert michael.feed.include?(post_following)
       end
       # フォロワーがいるユーザー自身の投稿を確認
+      assert_equal michael.feed.distinct, michael.feed
       michael.microposts.each do |post_self|
         assert michael.feed.include?(post_self)
       end
